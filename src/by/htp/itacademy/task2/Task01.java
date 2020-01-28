@@ -335,7 +335,7 @@ public class Task01 {
 	// 14. Даны два угла треугольника (в градусах).
 	// Определить, существует ли такой треугольник, и если да, то будет ли он
 	// прямоугольным.
-	
+
 	public static void printFourteen(int a, int b) {
 		if (a + b < 180) {
 			System.out.println("треугольник существует");
@@ -483,14 +483,13 @@ public class Task01 {
 	// В зависимости от ответа на экране должен появиться текст
 	// «Мне нравятся девочки!» или «Мне нравятся мальчики!».
 
-	public static void printTwenty() {
+	public static void printTwentyOne() {
 		Scanner sc = new Scanner(System.in);
 		String x;
 
 		System.out.print("Кто ты: мальчик или девочка? Введи Д или М: ");
-		if (sc.hasNextLine()) {
-
-			x = sc.nextLine();
+		if (sc.hasNext()) {
+			x = sc.next();
 
 			if (x.equals("Д")) {
 				System.out.println("Мне нравятся мальчики!");
@@ -580,7 +579,7 @@ public class Task01 {
 	// 26. Написать программу нахождения суммы большего и меньшего из трех чисел
 
 	public static void printTwentySix(double a, double b, double c) {
-		
+
 		if ((a > b) && (a > c)) {
 			System.out.println("max - " + a);
 		} else if ((b > a) && (b > c)) {
@@ -759,76 +758,91 @@ public class Task01 {
 	// 35. Вычислить число и месяц в невисокосном году по номеру дня.
 	public static void printThirtyFive(int a) {
 
-		if ((a <= 31) && (a > 0)) {
-			System.out.println(a + " января");
-			return;
-		}
+		if ((a <= 0) || (a > 365)) {
+			System.out.println("проверьте правильность введенного числа");
+		} else {
 
-		a = a - 31;
+			if ((a <= 31) && (a > 0)) {
+				System.out.println(a + " января");
+				return;
+			}
 
-		if ((a <= 28) && (a > 0)) {
-			System.out.println(a + " февраля");
-			return;
-		}
+			a = a - 31;
 
-		a = a - 28;
-		if ((a <= 31) && (a > 0)) {
-			System.out.println(a + " марта");
-			return;
-		}
+			if ((a <= 28) && (a > 0)) {
+				System.out.println(a + " февраля");
+				return;
+			}
 
-		a = a - 31;
-		if ((a <= 30) && (a > 0)) {
-			System.out.println(a + " апреля");
-			return;
-		}
+			a = a - 28;
 
-		a = a - 30;
-		if ((a <= 31) && (a > 0)) {
-			System.out.println(a + " мая");
-			return;
-		}
+			if ((a <= 31) && (a > 0)) {
+				System.out.println(a + " марта");
+				return;
+			}
 
-		a = a - 31;
-		if ((a <= 30) && (a > 0)) {
-			System.out.println(a + " июня");
-			return;
-		}
+			a = a - 31;
 
-		a = a - 30;
-		if ((a <= 31) && (a > 0)) {
-			System.out.println(a + " июля");
-			return;
-		}
+			if ((a <= 30) && (a > 0)) {
+				System.out.println(a + " апреля");
+				return;
+			}
 
-		a = a - 31;
-		if ((a <= 30) && (a > 0)) {
-			System.out.println(a + " августа");
-			return;
-		}
+			a = a - 30;
 
-		a = a - 31;
-		if ((a <= 30) && (a > 0)) {
-			System.out.println(a + " сентября");
-			return;
-		}
+			if ((a <= 31) && (a > 0)) {
+				System.out.println(a + " мая");
+				return;
+			}
 
-		a = a - 30;
-		if ((a <= 31) && (a > 0)) {
-			System.out.println(a + " октября");
-			return;
-		}
+			a = a - 31;
 
-		a = a - 31;
-		if ((a <= 30) && (a > 0)) {
-			System.out.println(a + " ноября");
-			return;
-		}
+			if ((a <= 30) && (a > 0)) {
+				System.out.println(a + " июня");
+				return;
+			}
 
-		a = a - 30;
-		if ((a <= 31) && (a > 0)) {
-			System.out.println(a + " декабря");
-			return;
+			a = a - 30;
+
+			if ((a <= 31) && (a > 0)) {
+				System.out.println(a + " июля");
+				return;
+			}
+
+			a = a - 31;
+
+			if ((a <= 30) && (a > 0)) {
+				System.out.println(a + " августа");
+				return;
+			}
+
+			a = a - 31;
+
+			if ((a <= 30) && (a > 0)) {
+				System.out.println(a + " сентября");
+				return;
+			}
+
+			a = a - 30;
+
+			if ((a <= 31) && (a > 0)) {
+				System.out.println(a + " октября");
+				return;
+			}
+
+			a = a - 31;
+
+			if ((a <= 30) && (a > 0)) {
+				System.out.println(a + " ноября");
+				return;
+			}
+
+			a = a - 30;
+
+			if ((a <= 31) && (a > 0)) {
+				System.out.println(a + " декабря");
+				return;
+			}
 		}
 	}
 

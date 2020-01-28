@@ -7,124 +7,124 @@ public class Task01 {
 
 	public static void main(String[] args) {
 		// 1
-		printOne();
+		// printOne();
 
 		// 2
-		printTwo();
+		// printTwo();
 
 		// 3
-		printThree();
+		// printThree();
 
 		// 4
-		printFour();
+		// printFour();
 
 		// 5
-		printFive();
+		// printFive();
 
 		// 6
-		printSix();
+		// printSix();
 
 		// 7
-		printSeven(1, 5, 1);
+		// printSeven(1, 5, 1);
 
 		// 8
-		printEight(1, 5, 1);
+		// printEight(1, 5, 1);
 
 		// 9
-		printNine();
+		// printNine();
 
 		// 10
-		printTen();
+		// printTen();
 
 		// 11
-		printEleven();
+		// printEleven();
 
 		// 12
-		printTwelve();
+		// printTwelve();
 
 		// 13
-		printThirteen();
+		// printThirteen();
 
 		// 14
-		printFourteen(200);
+		// printFourteen(200);
 
 		// 15
-		printFifteen(18);
+		// printFifteen(18);
 
 		// 16
-		printSixteen();
+		// printSixteen();
 
 		// 17
-		printSeventeen(2, 10);
+		// printSeventeen(2, 10);
 
 		// 18
-		printEighteen(5, 1);
+		// printEighteen(5, 1);
 
 		// 19
-		printNineteen(5, 1);
+		// printNineteen(5, 1);
 
 		// 20
-		printTwenty(5, 1);
+		// printTwenty(5, 1);
 
 		// 21
-		printTwentyOne(0, 60, 10);
+		// printTwentyOne(0, 60, 10);
 
 		// 22
-		printTwentyTwo(0, 60, 10);
+		// printTwentyTwo(0, 60, 10);
 
 		// 23
-		printTwentyThree(0, 60, 10);
+		// printTwentyThree(0, 60, 10);
 
 		// 24
-		printTwentyFour(2456789);
+		// printTwentyFour(2456789);
 
 		// 25
-		printTwentyFive(5);
+		// printTwentyFive(5);
 
 		// 26
-		printTwentySix();
+		// printTwentySix();
 
 		// 27
-		printTwentySeven(45, 47);
+		// printTwentySeven(45, 47);
 
 		// 28
-		printTwentyEight(45, 47, "-");
+		printTwentyEight();
 
 		// 29
-		printTwentyNine(546, 675);
+		// printTwentyNine(546, 675);
 
 		// 30
-		printThirty();
+		// printThirty();
 
 		// 31
-		printThirtyOne();
+		// printThirtyOne();
 
 		// 32
-		printThirtyTwo("a11_.sdf");
+		// printThirtyTwo("a11_.sdf");
 
 		// 33
-		printThirtyThree(56789);
+		// printThirtyThree(56789);
 
 		// 34
-		printThirtyFour();
+		// printThirtyFour();
 
 		// 35
-		printThirtyFive(12346);
+		// printThirtyFive(12346);
 
 		// 36
-		printThirtySix();
+		// printThirtySix();
 
 		// 37
-		printThirtySeven();
+		// printThirtySeven();
 
 		// 38
-		printThirtyEight(13570);
+		// printThirtyEight(13570);
 
 		// 39
-		printThirtyNine();
+		// printThirtyNine();
 
 		// 40
-		//printFourty(100);
+		// printFourty(100);
 	}
 
 	// 1. Необходимо вывести на экран числа от 1 до 5
@@ -218,9 +218,7 @@ public class Task01 {
 				System.out.print("x=" + i);
 				System.out.print("  y= " + (-i));
 				System.out.println();
-
 			}
-
 		}
 	}
 
@@ -235,13 +233,11 @@ public class Task01 {
 				y = (i + c) * 2;
 				System.out.print("  y= " + y);
 				System.out.println();
-
 			} else {
 				System.out.print("x=" + i);
 				y = (i - c) + 6;
 				System.out.print("  y= " + y);
 				System.out.println();
-
 			}
 
 		}
@@ -288,7 +284,6 @@ public class Task01 {
 		while (i <= 200) {
 
 			p = p - (i * i * i);
-
 			i++;
 		}
 
@@ -592,33 +587,64 @@ public class Task01 {
 	// (т.е. построить цикл).
 	// В качестве символа прекращения вычислений принять ‘0’.
 
-	public static void printTwentyEight(int x, int y, String c) {
+	public static void printTwentyEight() {
+		String c = null;
+		int x = 0;
+		int y = 0;
 		int z = 0;
 
-		if ((c == "+") || (c == "-") || (c == "/") || (c == "*")) {
-			if (c == "+") {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Введите x: ");
+		if (sc.hasNextInt()) {
+			x = sc.nextInt();
+		}
+
+		System.out.print("Введите y: ");
+		if (sc.hasNextInt()) {
+			y = sc.nextInt();
+		}
+
+		System.out.print("Введите знак: ");
+		if (sc.hasNext()) {
+			c = sc.next();
+		}
+	
+		while (!c.equals("0")) {
+
+			if (c.equals("+")) {
 				z = x + y;
-			} else if (c == "-") {
+				System.out.println("z=" + z);
+				
+			} else if (c.equals("-")) {
 				z = x - y;
-			} else if (c == "*") {
+				System.out.println("z=" + z);
+			} else if (c.equals("*")) {
 				z = x * y;
-			} else if (c == "*") {
+				System.out.println("z=" + z);
+			} else if (c.equals("/")) {
 				if (y == 0) {
 					System.out.println("деление на ноль");
 				} else {
 					z = x / y;
+					System.out.println("z=" + z);
 				}
 			} else {
-				System.out.println("неверный знак");
+				System.out.println("проверьте правильность введенного знака");
 			}
 
-			System.out.println("z=" + z);
-		}
+			System.out.print("Введите знак: ");
+			if (sc.hasNext()) {
+				c = sc.next();
+			}
+		}		
+		System.out.println("Вычисления завершены");
+
 	}
 
 	// 29. Даны два числа. Определить цифры, входящие в запись как первого так и
 	// второго числа.
-	
+
 	public static void printTwentyNine(int a, int b) {
 		int d = 0;
 		int c = 0;
@@ -639,7 +665,7 @@ public class Task01 {
 	}
 
 	// 30. Написать программу, переводящую римские цифры в арабские.
-	
+
 	public static void printThirty() {
 		String c = "MDLXVI"; // romanian
 		char letter;
@@ -683,7 +709,7 @@ public class Task01 {
 	// Человек пытается их угадать. Программа должна выводить угаданные и
 	// неугаданные числа из тех,
 	// что сгенерировала программа, а также ошибочные числа пользователя.
-	
+
 	public static void printThirtyOne() {
 		int[] mas = new int[5];
 		int[] array = new int[5];
@@ -718,7 +744,6 @@ public class Task01 {
 			} else {
 				System.out.println("не угадали: " + mas[i]);
 			}
-
 		}
 
 		// проверка введенных символов с клавиатуры
@@ -755,7 +780,6 @@ public class Task01 {
 				System.out.println("неверно введен " + (i + 1) + " символ:" + a);
 			}
 		}
-
 	}
 
 	// 33. Найдите наибольшую цифру данного натурального числа.
@@ -793,7 +817,7 @@ public class Task01 {
 	}
 
 	// 34. Найдите все четырехзначные числа, сумма цифр каждого из которых равна 15.
-	
+
 	public static void printThirtyFour() {
 		int a = 1000;
 		int x, y, z, d;
@@ -812,7 +836,7 @@ public class Task01 {
 	}
 
 	// 35. Найдите количество четных цифр данного натурального числа.
-	
+
 	public static void printThirtyFive(int n) {
 		int g;
 		int count = 0;
@@ -851,7 +875,6 @@ public class Task01 {
 				if ((i * 100 + j) % (i * j) == 0) {
 					System.out.println("первое число = " + i + " второе число = " + j);
 				}
-
 			}
 		}
 	}
@@ -874,7 +897,6 @@ public class Task01 {
 				if ((a % 99 == 0) && (b % 49 == 0)) {
 					System.out.println("первое число = " + i + " второе число = " + j);
 				}
-
 			}
 		}
 	}
