@@ -137,6 +137,7 @@ public class Task01 {
 
 	// 1. Даны два дейcтвительных числа х и у. Вычислить их сумму, разность,
 	// произведение и частное.
+
 	public static void printFirst(double x, double y) {
 		double s;
 		double r;
@@ -155,6 +156,7 @@ public class Task01 {
 	}
 
 	// 2. Найдите значение функции:y = 3 + а
+
 	public static void printTwo(int a) {
 		int z;
 		z = 3 + a;
@@ -162,6 +164,7 @@ public class Task01 {
 	}
 
 	// 3. Найдите значение функции: z = 2 * x + ( y – 2 ) * 5.
+
 	public static void printThree(int x, int y) {
 		int z;
 		z = 2 * x + (y - 2) * 5;
@@ -174,13 +177,16 @@ public class Task01 {
 	}
 
 	// 5. Соcтавить алгоритм нахождения cреднего арифметичеcкого двух чиcел
+
 	public static void printFive(int n, int m) {
+
 		System.out.println((n + m) / 2);
 	}
 
 	// 6.Написать код для решения задачи.
 	// В n малых бидонах 80 л молока. Сколько литров молока в m больших бидонах,
 	// если в каждом большом бидоне на 12 л. больше, чем в малом?
+
 	public static void printSix(int n, int m) {
 		double y;
 		m = n + 12;
@@ -191,6 +197,7 @@ public class Task01 {
 
 	// 7. Дан прямоугольник, ширина которого в два раза меньше длины. Найти
 	// площадь прямоугольника
+
 	public static void printSeven(double a) {
 		double b;
 		// ширина
@@ -200,9 +207,12 @@ public class Task01 {
 
 	// 8. Вычислить значение выражения по формуле (все переменные принимают
 	// действительные значения)
+
 	public static void printEight(double a, double b, double c) {
 		double x;
+
 		x = (b + Math.sqrt(Math.pow(b, 2) + 4 * a * c) / (2 * a)) - Math.pow(a, 3) * c + Math.pow(b, -2);
+
 		System.out.println("значение выражения по формуле= " + x);
 
 	}
@@ -295,6 +305,7 @@ public class Task01 {
 
 	// 15. Написать программу, которая выводит на экран первые четыре степени числа
 	// π.
+
 	public static void printFifteen() {
 		for (int i = 1; i <= 4; i++) {
 			System.out.println(Math.pow(Math.PI, i));
@@ -302,6 +313,7 @@ public class Task01 {
 	}
 
 	// 16. Найти произведение цифр заданного четырехзначного числа
+
 	public static void printSixteen(int n) {
 
 		int a;
@@ -318,6 +330,7 @@ public class Task01 {
 
 	// 17. Даны два числа. Найти среднее арифметическое кубов этих чисел и среднее
 	// геометрическое модулей этих чисел.
+
 	public static void printSeventeen(int a, int b) {
 
 		double s;
@@ -374,6 +387,7 @@ public class Task01 {
 
 	// 20. Известна длина окружности. Найти площадь круга, ограниченного этой
 	// окружностью.
+
 	public static void printTwenty(double l) {
 		double s;
 
@@ -385,6 +399,7 @@ public class Task01 {
 	// и целой частях).
 	// Поменять местами дробную и целую части числа и вывести полученное значение
 	// числа.
+
 	public static void printTwentyOne(double r) {
 
 		int c;
@@ -530,38 +545,38 @@ public class Task01 {
 	// 29. Найти (в радианах в градусах) все углы треугольника со сторонами а, b, с.
 	public static void printTwentyNine(double a, double b, double c) {
 		double x;
-		double g_d;
-		double g_r;
-		double a_d;
-		double a_r;
-		double b_d;
-		double b_r;
+		double gd;
+		double gr;
+		double ad;
+		double ar;
+		double bd;
+		double br;
 
 		x = (a * a + b * b - c * c) / (2 * a * b);
 		if (x == 0) {
 			System.out.println("угол гамма в градуcах: 90, угол гамма в радианах: 1.571");
 		} else {
-			g_d = Math.toDegrees(Math.acos(x));
-			g_r = Math.acos(x);
-			System.out.println("угол гамма в градуcах: " + g_d + ", угол гамма в радианах: " + g_r);
+			gd = Math.toDegrees(Math.acos(x));
+			gr = Math.acos(x);
+			System.out.println("угол гамма в градуcах: " + gd + ", угол гамма в радианах: " + gr);
 		}
 
 		x = (c * c + b * b - a * a) / (2 * c * b);
 		if (x == 0) {
 			System.out.println("угол альфа в градуcах: 90, угол альфа в радианах: 1.571");
 		} else {
-			a_d = Math.toDegrees(Math.acos(x));
-			a_r = Math.acos(x);
-			System.out.println("угол альфа в градуcах: " + a_d + ", угол альфа в радианах: " + a_r);
+			ad = Math.toDegrees(Math.acos(x));
+			ar = Math.acos(x);
+			System.out.println("угол альфа в градуcах: " + ad + ", угол альфа в радианах: " + ar);
 		}
 
 		x = (a * a + c * c - b * b) / (2 * a * c);
 		if (x == 0) {
 			System.out.println("угол бетта в градуcах: 90, угол бетта в радианах: 1.571");
 		} else {
-			b_d = Math.toDegrees(Math.acos(x));
-			b_r = Math.acos(x);
-			System.out.println("угол бетта в граду�?ах: " + b_d + ", угол бетта в радианах: " + b_r);
+			bd = Math.toDegrees(Math.acos(x));
+			br = Math.acos(x);
+			System.out.println("угол бетта в граду�?ах: " + bd + ", угол бетта в радианах: " + br);
 		}
 	}
 
@@ -654,8 +669,8 @@ public class Task01 {
 	public static void printThirtyFive(int a, int b) {
 		int c;
 		int min;
-		int max_cheslitel;
-		int max_znamenatel;
+		int maxcheslitel;
+		int maxznamenatel;
 		int d;
 
 		// целая часть
@@ -663,43 +678,43 @@ public class Task01 {
 		min = getMin(c);
 		System.out.println("младшая цифра целой части числа = " + min);
 
-		// дробна�? ча�?ть
+		// дробная часть
 		d = a - b * c;
-		max_cheslitel = getMax(d);
-		max_znamenatel = getMax(b);
-		if (max_cheslitel > max_znamenatel) {
-			System.out.println("старшая цифра дробной части числа = " + max_cheslitel);
-		} else if (max_cheslitel < max_znamenatel) {
+		maxcheslitel = getMax(d);
+		maxznamenatel = getMax(b);
+		if (maxcheslitel > maxznamenatel) {
+			System.out.println("старшая цифра дробной части числа = " + maxcheslitel);
+		} else if (maxcheslitel < maxznamenatel) {
 
-			System.out.println("старшая цифра дробной части числа = " + max_znamenatel);
+			System.out.println("старшая цифра дробной части числа = " + maxznamenatel);
 		}
 
 		else
 
 		{
-			System.out.println("старшая цифра дробной части числа = " + max_znamenatel);
+			System.out.println("старшая цифра дробной части числа = " + maxznamenatel);
 		}
 	}
 
 	public static int getMax(int g) {
-		int g_buf;
+		int gbuf;
 		int count = 0;
 		int max;
-		g_buf = g;
+		gbuf = g;
 
-		while (g_buf > 0) {
+		while (gbuf > 0) {
 			count = count + 1;
-			g_buf = g_buf / 10;
+			gbuf = gbuf / 10;
 		}
 
 		int[] mas = new int[count];
 
-		// инициализировать ма�?�?ив из цифер
+		// инициализировать маccив из цифер
 		for (int j = 0; j < mas.length; j++) {
 			mas[j] = g % 10;
 			g = g / 10;
 		}
-		// пои�?к �?таршей цифры дрбной ча�?ти чи�?лител�?/знаменател�?
+		// поиcк cтаршей цифры дрбной чаcти чиcлителя/знаменателя
 		max = mas[0];
 		for (int j = 0; j < mas.length; j++) {
 			if (mas[j] > max) {
@@ -710,19 +725,19 @@ public class Task01 {
 	}
 
 	public static int getMin(int g) {
-		int g_buf;
+		int gbuf;
 		int count = 0;
 		int min;
 
-		// количе�?тов разр�?дов
+		// количеcтов разрядов
 		if (g == 0) {
 			System.out.println("нет целой ча�?ти");
 		}
 		{
-			g_buf = g;
-			while (g_buf > 0) {
+			gbuf = g;
+			while (gbuf > 0) {
 				count = count + 1;
-				g_buf = g_buf / 10;
+				gbuf = gbuf / 10;
 			}
 		}
 
@@ -794,6 +809,7 @@ public class Task01 {
 
 	// B.Сумма двух первых цифр заданного четырехзначного числа равна сумме двух его
 	// последних цифр.
+
 	public static void printThirtySevenB(int n) {
 		int a;
 		int b;
@@ -812,6 +828,7 @@ public class Task01 {
 	}
 
 	// C.Сумма цифр данного трехзначного числа N является четным числом.
+
 	public static void printThirtySevenC(int n) {
 		int a;
 		int b;
@@ -830,6 +847,7 @@ public class Task01 {
 
 	// D.Точка с координатами (х, у) принадлежит части плоскости, лежащей между
 	// прямыми х= т, х= п (т<п).
+
 	public static void printThirtySevenD(double x, double t, double p) {
 
 		if ((x > t) && (x < p)) {
@@ -840,6 +858,7 @@ public class Task01 {
 	}
 
 	// E.Квадрат заданного трехзначного числа равен кубу суммы цифр этого числа.
+
 	public static void printThirtySevenE(int n) {
 		int a;
 		int b;
@@ -858,6 +877,7 @@ public class Task01 {
 	}
 
 	// F.Треугольник со сторонами а,b,с является равнобедренным.
+
 	public static void printThirtySevenF(double a, double b, double c) {
 
 		if ((a == b) || (b == c) || (a == c)) {
@@ -869,6 +889,7 @@ public class Task01 {
 
 	// G.Сумма каких-либо двух цифр заданного трехзначного натурального числа N
 	// равна третьей цифре.
+
 	public static void printThirtySevenG(int n) {
 		int a;
 		int b;
@@ -887,6 +908,7 @@ public class Task01 {
 
 	// H.Заданное число N является степенью числа а (показатель степени может
 	// находиться в диапазоне от 0 до 4).
+
 	public static void printThirtySevenH(int n, int a) {
 
 		if ((Math.pow(a, 0) == n) || (Math.pow(a, 1) == n) || (Math.pow(a, 2) == n) || (Math.pow(a, 3) == n)
@@ -899,6 +921,7 @@ public class Task01 {
 
 	// K.График функции у = ах2 + bх+ с проходит через заданную точку с координатами
 	// (m, п).
+
 	public static void printThirtySevenK(int m, int n) {
 		int a;
 		int b;
@@ -918,6 +941,7 @@ public class Task01 {
 	// 38. Для данных областей составить линейную программу, которая печатает true,
 	// если точка с координатами (х, у) принадлежит закрашенной области, и false — в
 	// противном случае
+
 	public static void printThirtyEightA(double x, double y) {
 		int x1 = -4;
 		int y1 = 0;
@@ -973,9 +997,11 @@ public class Task01 {
 	// 39*. Дано действительное число х. Не пользуясь никакими другими
 	// арифметическими операциями, кроме умножения, сложения и вычитания, вычислите
 	// за минимальное число операций: 2x4 - 3х3 + 4х2 - 5х + 6.
+
 	public static void printThirtyNine(int x) {
 		int y;
 		int c;
+
 		c = x * x;
 		y = 2 * c * (c + 2) - x * (3 * c - 5) + 6;
 
@@ -984,15 +1010,17 @@ public class Task01 {
 	}
 
 	// 40*. Дано значение х. Получить значения -2х + 3х2 - 4х3 и 1 + 2х + 3х2 + 4х3
-	// . Позаботьтесь об экономии операций.
+	// Позаботьтесь об экономии операций.
+
 	public static void printFourty(int x) {
 		int y1;
 		int y2;
-
 		int c;
+
 		c = x * x;
 		y1 = -2 * x + c * (3 - 4 * x);
 		y2 = 1 + 2 * x + c * (3 + 4 * x);
+
 		System.out.println(y1);
 		System.out.println(y2);
 	}

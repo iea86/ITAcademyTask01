@@ -7,125 +7,124 @@ public class Task01 {
 
 	public static void main(String[] args) {
 		// 1
-		// printOne();
+		printOne();
 
 		// 2
-		// printTwo();
+		printTwo();
 
 		// 3
-		// printThree();
+		printThree();
 
 		// 4
-		// printFour();
+		printFour();
 
 		// 5
-		// printFive();
+		printFive();
 
 		// 6
-		// printSix();
+		printSix();
 
 		// 7
-		// printSeven(1, 5, 1);
+		printSeven(1, 5, 1);
 
 		// 8
-		// printEight(1, 5, 1);
+		printEight(1, 5, 1);
 
 		// 9
-		// printNine(1, 5, 1);
+		printNine();
 
 		// 10
-		// printTen();
+		printTen();
 
 		// 11
-		// printEleven();
+		printEleven();
 
 		// 12
-		// printTwelve();
+		printTwelve();
 
 		// 13
 		printThirteen();
 
 		// 14
-		// printFourteen(200);
+		printFourteen(200);
 
 		// 15
-		// printFifteen(18);
+		printFifteen(18);
 
 		// 16
-		// printSixteen();
+		printSixteen();
 
 		// 17
-		// printSeventeen(2, 10);
+		printSeventeen(2, 10);
 
 		// 18
-		// printEighteen(5,1);
+		printEighteen(5, 1);
 
 		// 19
-		// printNineteen(5, 1);
+		printNineteen(5, 1);
 
 		// 20
-		// printTwenty(5, 1);
+		printTwenty(5, 1);
 
 		// 21
-		// printTwentyOne(0, 60,10);
+		printTwentyOne(0, 60, 10);
 
 		// 22
-		// printThentyTwo(0, 60, 10);
+		printTwentyTwo(0, 60, 10);
 
 		// 23
-		// printTwentyThree(0, 60, 10);
+		printTwentyThree(0, 60, 10);
 
 		// 24
-		// printTwentyFour(2456789);
+		printTwentyFour(2456789);
 
 		// 25
-		// printTwentyFive(5);
+		printTwentyFive(5);
 
 		// 26
-		// printTwentySix();		
+		printTwentySix();
 
 		// 27
-		// printTwentySeven(45, 47);
+		printTwentySeven(45, 47);
 
 		// 28
-		// printTwentyEight(45, 47, "-");
+		printTwentyEight(45, 47, "-");
 
 		// 29
-		// printTwentyNine(546, 675);
+		printTwentyNine(546, 675);
 
 		// 30
-		// printThirty();
+		printThirty();
 
 		// 31
-		// printThirtyOne();
+		printThirtyOne();
 
 		// 32
-		// printThirtyTwo("a11_.sdf");
+		printThirtyTwo("a11_.sdf");
 
 		// 33
-		// printThirtyThree(56789);
+		printThirtyThree(56789);
 
 		// 34
-		// printThirtyFour();
+		printThirtyFour();
 
 		// 35
-		// printThirtyFive(12346);
+		printThirtyFive(12346);
 
 		// 36
-		// printThirtySix();
+		printThirtySix();
 
 		// 37
-		// printThirtySeven();
+		printThirtySeven();
 
 		// 38
-		// printThirtyEight(13570);
+		printThirtyEight(13570);
 
 		// 39
-		// printThirtyNine();
+		printThirtyNine();
 
 		// 40
-		// printFourty(100);
-
+		//printFourty(100);
 	}
 
 	// 1. Необходимо вывести на экран числа от 1 до 5
@@ -619,6 +618,7 @@ public class Task01 {
 
 	// 29. Даны два числа. Определить цифры, входящие в запись как первого так и
 	// второго числа.
+	
 	public static void printTwentyNine(int a, int b) {
 		int d = 0;
 		int c = 0;
@@ -639,6 +639,7 @@ public class Task01 {
 	}
 
 	// 30. Написать программу, переводящую римские цифры в арабские.
+	
 	public static void printThirty() {
 		String c = "MDLXVI"; // romanian
 		char letter;
@@ -682,6 +683,7 @@ public class Task01 {
 	// Человек пытается их угадать. Программа должна выводить угаданные и
 	// неугаданные числа из тех,
 	// что сгенерировала программа, а также ошибочные числа пользователя.
+	
 	public static void printThirtyOne() {
 		int[] mas = new int[5];
 		int[] array = new int[5];
@@ -696,7 +698,7 @@ public class Task01 {
 			System.out.println(mas[i]);
 		}
 
-		// Заполняем массив элементами, введёнными с клавиатуры
+		// заполняем массив элементами, введёнными с клавиатуры
 		Scanner input = new Scanner(System.in);
 		System.out.println("Введите 5 чисел в диапазоне от 1 до 15: ");
 		for (int i = 0; i < 5; i++) {
@@ -731,6 +733,7 @@ public class Task01 {
 	// символов.
 	// В качестве первого символа допустимы только буквы и знак подчеркивания.
 	// Остальные символы могут быть буквами, цифрами и знаком подчеркивания.
+
 	public static void printThirtyTwo(String s) {
 		char a;
 		System.out.println(s);
@@ -756,6 +759,7 @@ public class Task01 {
 	}
 
 	// 33. Найдите наибольшую цифру данного натурального числа.
+
 	public static void printThirtyThree(int n) {
 
 		int count = 0;
@@ -789,7 +793,8 @@ public class Task01 {
 	}
 
 	// 34. Найдите все четырехзначные числа, сумма цифр каждого из которых равна 15.
-	public static void printThirtyThree() {
+	
+	public static void printThirtyFour() {
 		int a = 1000;
 		int x, y, z, d;
 
@@ -807,6 +812,7 @@ public class Task01 {
 	}
 
 	// 35. Найдите количество четных цифр данного натурального числа.
+	
 	public static void printThirtyFive(int n) {
 		int g;
 		int count = 0;
@@ -837,6 +843,7 @@ public class Task01 {
 
 	// 36. Два двузначных числа, записанных одно за другим , образуют четырёхзначное
 	// число,которое делится на их произведение. Найти эти числа.
+
 	public static void printThirtySix() {
 
 		for (int i = 10; i <= 99; i++) {
@@ -848,13 +855,13 @@ public class Task01 {
 			}
 		}
 	}
+
 	// 37. Даны два двузначных числа А и В. Из этих чисел составили 2 четырехзначных
 	// числа:
 	// первое число получили путем написания сначала числа А, затем В.
 	// Для получения второго числа сначала записали число В, затем А.
 	// Найти числа А и В если известно , что первое четырехзначное число нацело
-	// делится на 99,
-	// а второе на 49.
+	// делится на 99, а второе на 49.
 
 	public static void printThirtySeven() {
 		int a;
@@ -917,6 +924,7 @@ public class Task01 {
 		int y;
 		int z;
 		int n = 100;
+
 		while (n < 999) {
 			x = n % 10;
 			y = (n / 10) % 10;
@@ -931,19 +939,19 @@ public class Task01 {
 
 	// 40. Получить все числа, не превышающие заданного числа N, которые делятся без
 	// остатка на все свои цифры.
+
 	public static void printFourty(int n) {
 		int count = 0;
 		int g;
-		int g_buf;
+		int gbuf;
 		int k = 1;
 		int chislo;
-		chislo = k;
-
 		int check;
+		chislo = k;
 
 		while (chislo < n) {
 			g = chislo;
-			g_buf = chislo;
+			gbuf = chislo;
 			check = 0;
 
 			// количество разрядов
