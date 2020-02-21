@@ -1,4 +1,4 @@
-package by.htp.itacademy.task76;
+package by.htp.itacademy.task8;
 
 import java.util.Scanner;
 
