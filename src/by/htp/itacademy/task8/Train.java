@@ -1,4 +1,4 @@
-package by.htp.itacademy.task76;
+package by.htp.itacademy.task8;
 
 public class Train {
 
