@@ -1,4 +1,4 @@
-package by.training.tasks.aliv.masmas;
+package by.htp.itacademy.task6;
 
 //39. Найдите произведение двух матриц.
 import java.util.Random;
