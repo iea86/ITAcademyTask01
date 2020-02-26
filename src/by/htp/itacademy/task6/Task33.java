@@ -1,4 +1,4 @@
-package by.htp.itacademy.task5;
+package by.htp.itacademy.task6;
 
 //33. Отсортировать стобцы матрицы по возрастанию и убыванию значений эементов.
 
