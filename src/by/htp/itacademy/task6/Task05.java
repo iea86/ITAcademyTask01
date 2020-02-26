@@ -1,4 +1,4 @@
-package by.training.tasks.aliv.masmas;
+package by.htp.itacademy.task6;
 import java.util.Random;
 
 //5. Дана матрица. Вывести на экран все четные строки, то есть с четными номерами.
