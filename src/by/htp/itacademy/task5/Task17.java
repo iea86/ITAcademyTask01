@@ -1,4 +1,4 @@
-package by.training.tasks.aliv.mas;
+package by.htp.itacademy.task5;
 
 //17. Дана последовательность целых чисел n aaa ,,, 21  . Образовать новую последовательность, выбросив из исходной те члены, которые равны ) ,, ,min( 21 n aa a  .
 
