@@ -1,4 +1,4 @@
-package by.training.tasks.aliv.mas;
+package by.htp.itacademy.task5;
 
 //4. Дана последовательность действительных чисел а1 а2 ,..., аn . Выяснить, будет ли она возрастающей. 
 
