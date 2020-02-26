@@ -1,4 +1,4 @@
-package by.training.tasks.aliv.mas;
+package by.htp.itacademy.task5;
 
 
 import java.util.Random;
