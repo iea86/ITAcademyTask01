@@ -1,4 +1,4 @@
-package by.training.tasks.aliv.mas;
+package by.htp.itacademy.task5;
 
 //6. Дана последовательность чисел а1 ,а2 ,..., ап. Указать наименьшую длину числовой оси, содержащую все эти числа. 
 
