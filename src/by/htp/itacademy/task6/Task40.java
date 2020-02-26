@@ -1,4 +1,4 @@
-package by.training.tasks.aliv.masmas;
+package by.htp.itacademy.task6;
 
 
 //Магическим квадратом порядка n называется квадратная матрица размера nxn,
