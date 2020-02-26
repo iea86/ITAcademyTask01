@@ -1,4 +1,4 @@
-package by.training.tasks.aliv.masmas;
+package by.htp.itacademy.task5;
 
 
 //34. Сформировать случайную матрицу m x n, состоящую из нулей и единиц,
