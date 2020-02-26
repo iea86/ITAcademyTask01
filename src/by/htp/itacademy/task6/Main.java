@@ -1,4 +1,4 @@
-package by.training.tasks.aliv.masmas;
+package by.htp.itacademy.task5;
 
 public class Main {
 
