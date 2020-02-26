@@ -1,4 +1,4 @@
-package by.training.tasks.aliv.masmas;
+package by.htp.itacademy.task6;
 
 //10. Дана матрица. Вывести k-ю строку и p-й столбец матрицы
 
