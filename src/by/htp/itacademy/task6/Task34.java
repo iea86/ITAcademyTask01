@@ -1,4 +1,4 @@
-package by.htp.itacademy.task5;
+package by.htp.itacademy.task6;
 
 
 //34. Сформировать случайную матрицу m x n, состоящую из нулей и единиц,
