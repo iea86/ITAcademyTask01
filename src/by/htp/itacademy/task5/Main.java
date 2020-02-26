@@ -1,4 +1,4 @@
-package by.htp.itacademy.task6;
+package by.htp.itacademy.task5;
 
 public class Main {
 
