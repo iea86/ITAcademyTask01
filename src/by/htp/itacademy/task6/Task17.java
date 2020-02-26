@@ -1,4 +1,4 @@
-package by.training.tasks.aliv.masmas;
+package by.htp.itacademy.task6;
 
 
 public class Task17 extends Task {
