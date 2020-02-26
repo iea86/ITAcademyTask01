@@ -1,4 +1,4 @@
-package by.htp.itacademy.task5;
+package by.htp.itacademy.task6;
 
 import java.util.Random;
 
