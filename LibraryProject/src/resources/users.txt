@@ -1,0 +1,7 @@
+id=1 login=aaa password=123 status=admin
+id=2 login=qqq password=www status=subscriber
+id=3 login=uiu password=bbb status=admin
+id=4 login=olga password=olga status=subscriber
+id=5 login=olga password=olga status=subscriber
+id=6 login=olga password=olga status=subscriber
+id=7 login=olga password=olga status=subscriber
