@@ -1,6 +1,6 @@
 package by.htp.library.bean;
 
-public class User {
+public class User11 {
 	private int id;
 	private String login;
 	private String password;
