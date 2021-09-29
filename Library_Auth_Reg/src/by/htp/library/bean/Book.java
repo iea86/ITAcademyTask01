@@ -2,6 +2,6 @@ package by.htp.library.bean;
 
 
 
-public class Book1 {
+public class Book11{
 
 }
